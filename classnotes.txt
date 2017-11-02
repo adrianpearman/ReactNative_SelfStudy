@@ -1,0 +1,20 @@
+create-react-native init #projectname
+
+to launch the simulator, run the command
+For iOs: react-native run-ios
+For Android: react-native run-android
+
+first two modules for ios and android are very rarely changed (only on rare circumstances that these files will be changed by us)
+
+React - knows how a component should behave
+knows how to take a bunch of components and make them work together
+
+React Native - knows how to take the output from a component and make it display on a mobile device
+provides default core components (image, text)
+
+Components take in developer code and convert it to JSX
+
+One of the main differences between React and React Native is that to add styling to a component, the rules must be added directly as opposed to a seperate css file like web applications.
+
+<Text> = displays text
+<View> = displays how it is positioned
