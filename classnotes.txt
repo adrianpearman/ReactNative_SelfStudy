@@ -17,4 +17,39 @@ Components take in developer code and convert it to JSX
 One of the main differences between React and React Native is that to add styling to a component, the rules must be added directly as opposed to a seperate css file like web applications.
 
 <Text> = displays text
-<View> = displays how it is positioned
+<View> = displays background colour and positioning
+flexbox is used for positioning components in React Native
+ - jusitifyContent: helps to moves the content up or down fro its initial position
+ - alignItems: helps to move the content horizontally from its initial position
+ - both use 'flex-start', 'center' & 'flex-end' to apply the direct position
+ -'space between' equally spaces out the components within the application. 'space-around' is very similar but equally adds margin to the top and bottom of the components
+ - 'flexDirection' 'row' places the <View> items horizontally. 'column' places the <view> items vertically
+
+ Functional Component
+ Used for presenting static data. Cant handle fetching data and it's easy to write.
+ example:
+ const Header = () => {
+  return <text>Hi There </text>
+ }
+
+ Class Component
+ Used for dynamic sources if data. handles any data that might change (fetching data, user events etc.). Knows when it gets rendered to the device (useful for data fetching). More code to right.
+ Example:
+ class Header extends Component {
+  render(){
+    return(
+      <Text> Hello There </Text>
+    )
+  }
+ }
+
+ For network requests, we'll be using axios
+
+
+ For review purposes:
+ Rules of state
+  - a plain javascript object used to record and response to  user-triggered events
+  -  we update update the component to show state as 'this.setState'
+  - only change it with 'this.setState' instead of 'this.state'
+
+  rendering Images are very similar to React. we use the <Image source=("")> tag instead of the <img src="">
